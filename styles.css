@@ -1,2 +1,27 @@
 
 /* Your CSS Code here. */
+html, body {
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Full height */
+}
+
+.holder {
+    display: flex; /* Use flexbox for the holder */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-around; /* Evenly distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Optional: Padding for better spacing */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+}
+
+.item {
+    flex: 1 1 100px; /* Allow items to grow and shrink, with a base size */
+    margin: 10px; /* Space between items */
+    background-color: lightgray; /* Optional: Background color for visibility */
+    display: flex; /* Flex for centering text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    min-width: 80px; /* Minimum width for items */
+}
